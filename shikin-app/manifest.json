@@ -1,0 +1,8 @@
+{
+  "name": "資金管理",
+  "short_name": "資金管理",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111111"
+}
