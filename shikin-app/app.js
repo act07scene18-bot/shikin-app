@@ -70,3 +70,9 @@ function commit(C) {
 }
 
 render();
+document.getElementById("resetAll").onclick = () => {
+  if (confirm("履歴とAをすべてリセットします。よろしいですか？")) {
+    localStorage.clear();
+    location.reload();
+  }
+};
