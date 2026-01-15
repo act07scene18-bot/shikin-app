@@ -72,8 +72,10 @@ function commit(C) {
 render();
 document.getElementById("resetAll").onclick = () => {
   if (confirm("履歴とAをすべてリセットします。よろしいですか？")) {
-    localStorage.clear();
-    location.reload();
+  localStorage.removeItem(KEY);
+state = { A: null, history: [] };
+save(state);
+location.reload();
   }
 };
 document.addEventListener("DOMContentLoaded", () => {
