@@ -76,3 +76,19 @@ document.getElementById("resetAll").onclick = () => {
     location.reload();
   }
 };
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("resetAll");
+  if (!btn) return;
+
+  btn.addEventListener("click", () => {
+    // まず動作確認用アラート
+    alert("リセット実行");
+
+    // アプリのデータだけ消す（他サイトを消さない）
+    localStorage.removeItem("shikin_app");
+    // もしキー名が違う版なら、これも消す
+    localStorage.removeItem("shikin_app_v1");
+
+    location.reload();
+  });
+});
