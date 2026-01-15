@@ -1,4 +1,4 @@
-const CACHE = "shikin-cache-v1";
+const CACHE_NAME = "shikin-cache-v2";
 const FILES = [
   "./",
   "./index.html",
