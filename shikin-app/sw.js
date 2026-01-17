@@ -1,4 +1,4 @@
-const CACHE_NAME = "shikin-cache-v2";
+const CACHE_NAME = "shikin-app-v3"; // v2→v3 みたいに上げる
 const FILES = [
   "./",
   "./index.html",
