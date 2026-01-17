@@ -1,4 +1,4 @@
-const RATE = 0.08;
+const RATE = 0.01;
 const KEY = "shikin_app";
 
 function load() {
